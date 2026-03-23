@@ -5,12 +5,15 @@ using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 namespace tests
 {
-	TEST_CLASS(tests)
+	TEST_CLASS(WhoWantsToBeAMillionaireTests)
 	{
 	public:
 		
-		TEST_METHOD(TestMethod1)
+		// Тестовый метод для проверки существования класса Question
+		TEST_METHOD(TestQuestionClassExistence)
 		{
+			Question question;
+			Assert::IsTrue(true); // При успешной компиляции считаем тест пройденным
 		}
 	};
 }
