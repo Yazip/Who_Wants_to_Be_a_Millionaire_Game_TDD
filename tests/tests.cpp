@@ -1,7 +1,7 @@
 ﻿#include "pch.h"
 #include "CppUnitTest.h"
 
-#include "../src/question.h"
+#include "../src/question.cpp"
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 

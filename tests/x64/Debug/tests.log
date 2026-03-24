@@ -1,5 +1,4 @@
-﻿  pch.cpp
-  tests.cpp
+﻿  tests.cpp
 D:\Универ\ТОПО\Лаб.3\Who_Wants_to_Be_a_Millionaire_Game\tests\tests.cpp(17,13): warning C4101: question: неиспользованная локальная переменная
   (компиляция исходного файла "/tests.cpp")
   
