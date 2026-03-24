@@ -4,6 +4,7 @@
 
 class Question {
 private:
+	std::string text;
 	int correct_answer_index;
 public:
 	Question() = default;

@@ -1,7 +1,7 @@
 #include "question.h"
 
 void Question::set_text(std::string text) {
-	// TODO: реализовать полноценное установление текста вопроса
+	this->text = text;
 }
 
 void Question::set_correct_answer_index(int correct_answer_index) {
@@ -9,8 +9,7 @@ void Question::set_correct_answer_index(int correct_answer_index) {
 }
 
 std::string Question::get_text() const {
-	// TODO: реализовать полноценный возврат текста вопроса
-	return "Какая страна является родиной чая?";
+	return this->text;
 }
 
 int Question::get_correct_answer_index() const {
