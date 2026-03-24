@@ -10,5 +10,5 @@ public:
 
 	int get_correct_answer_index() const;
 
-	bool check_answer(int answer_index) const; // Метод для проверки на правильность ответа выбранного игроком
+	bool check_answer(int answer_index) const; // РњРµС‚РѕРґ РґР»СЏ РїСЂРѕРІРµСЂРєРё РЅР° РїСЂР°РІРёР»СЊРЅРѕСЃС‚СЊ РѕС‚РІРµС‚Р° РІС‹Р±СЂР°РЅРЅРѕРіРѕ РёРіСЂРѕРєРѕРј
 };
