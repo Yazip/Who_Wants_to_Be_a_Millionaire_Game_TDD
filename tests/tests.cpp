@@ -33,5 +33,13 @@ namespace tests
 			question.set_correct_answer_index(1);
 			Assert::AreEqual(1, question.get_correct_answer_index());
 		}
+
+		// Тестовый метод для проверки работы метода для проверки правильности ответа данного игроком
+		TEST_METHOD(TestCheckAnswer)
+		{
+			Question question;
+			question.set_correct_answer_index(0);
+			Assert::IsTrue(question.check_answer(0));
+		}
 	};
 }
