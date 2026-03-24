@@ -52,12 +52,20 @@ namespace tests
 			Assert::IsFalse(question.check_answer(0));
 		}
 
-		// Тестовый метод для проверки задания значения полю text класса Question
-		TEST_METHOD(TestSetText)
+		// Тестовые методы для проверки задания значения полю text класса Question
+
+		TEST_METHOD(TestSetText1)
 		{
 			Question question;
 			question.set_text("Какая страна является родиной чая?");
 			Assert::AreEqual((std::string)"Какая страна является родиной чая?", question.get_text());
+		}
+
+		TEST_METHOD(TestSetText2)
+		{
+			Question question;
+			question.set_text("Какой псевдоним добавил к своей фамилии писатель Алексей Новиков?");
+			Assert::AreEqual((std::string)"Какой псевдоним добавил к своей фамилии писатель Алексей Новиков?", question.get_text());
 		}
 	};
 }
