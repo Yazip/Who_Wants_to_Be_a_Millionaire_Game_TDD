@@ -7,3 +7,10 @@ void Question::set_correct_answer_index(int correct_answer_index) {
 int Question::get_correct_answer_index() const {
 	return this->correct_answer_index;
 }
+
+// Метод для проверки на правильность ответа выбранного игроком
+
+bool Question::check_answer(int answer_index) const {
+	// TODO: реализовать полноценную проверку на правильность ответа игрока
+	return true;
+}
