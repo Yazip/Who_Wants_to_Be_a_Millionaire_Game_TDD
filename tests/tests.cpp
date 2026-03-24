@@ -34,12 +34,22 @@ namespace tests
 			Assert::AreEqual(1, question.get_correct_answer_index());
 		}
 
-		// Тестовый метод для проверки работы метода для проверки правильности ответа данного игроком
-		TEST_METHOD(TestCheckAnswer)
+		// Тестовые методы для проверки работы метода для проверки правильности ответа данного игроком
+
+		// Игрок дал правильный ответ
+		TEST_METHOD(TestCheckAnswerCorrect)
 		{
 			Question question;
 			question.set_correct_answer_index(0);
 			Assert::IsTrue(question.check_answer(0));
+		}
+
+		// Игрок дал неправильный ответ
+		TEST_METHOD(TestCheckAnswerWrong)
+		{
+			Question question;
+			question.set_correct_answer_index(1);
+			Assert::IsFalse(question.check_answer(0));
 		}
 	};
 }
