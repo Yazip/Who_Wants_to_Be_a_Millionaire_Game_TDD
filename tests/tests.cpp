@@ -51,5 +51,13 @@ namespace tests
 			question.set_correct_answer_index(1);
 			Assert::IsFalse(question.check_answer(0));
 		}
+
+		// Тестовый метод для проверки задания значения полю text класса Question
+		TEST_METHOD(TestSetText)
+		{
+			Question question;
+			question.set_text("Какая страна является родиной чая?");
+			Assert::AreEqual((std::string)"Какая страна является родиной чая?", question.get_text());
+		}
 	};
 }
