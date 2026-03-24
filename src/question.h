@@ -1,6 +1,8 @@
 #pragma once
 
 class Question {
+private:
+	int correct_answer_index;
 public:
 	Question() = default;
 
