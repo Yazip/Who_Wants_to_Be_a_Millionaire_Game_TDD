@@ -17,5 +17,13 @@ namespace tests
 			Question question;
 			Assert::IsTrue(true); // При успешной компиляции считаем тест пройденным
 		}
+
+		// Тестовый метод для проверки задания значения полю correct_answer_index класса Question
+		TEST_METHOD(TestSetCorrectAnswerIndex)
+		{
+			Question question;
+			question.set_correct_answer_index(0);
+			Assert::AreEqual(0, question.get_correct_answer_index());
+		}
 	};
 }
