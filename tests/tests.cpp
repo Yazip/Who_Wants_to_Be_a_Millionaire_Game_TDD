@@ -67,5 +67,14 @@ namespace tests
 			question.set_text("Какой псевдоним добавил к своей фамилии писатель Алексей Новиков?");
 			Assert::AreEqual((std::string)"Какой псевдоним добавил к своей фамилии писатель Алексей Новиков?", question.get_text());
 		}
+
+		// Тестовый метод для проверки задания значения полю difficulty_level класса Question
+
+		TEST_METHOD(TestSetDifficultyLevel)
+		{
+			Question question;
+			question.set_difficulty_level(1);
+			Assert::AreEqual(1, question.get_difficulty_level());
+		}
 	};
 }
