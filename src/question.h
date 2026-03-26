@@ -6,6 +6,7 @@ class Question {
 private:
 	std::string text;
 	int correct_answer_index = 0;
+	int difficulty_level; // (1 - лёгкий, 2 - средний, 3 - сложный)
 public:
 	Question() = default;
 
