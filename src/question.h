@@ -7,6 +7,7 @@ class Question {
 private:
 	std::string text;
 	int difficulty_level; // (1 - лёгкий, 2 - средний, 3 - сложный)
+	std::vector<std::string> answers;
 	int correct_answer_index = 0;
 public:
 	Question() = default;

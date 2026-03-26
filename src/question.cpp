@@ -9,7 +9,7 @@ void Question::set_difficulty_level(int difficulty_level) {
 }
 
 void Question::set_answers(std::vector<std::string> answers) {
-	// TODO: реализовать полноценное уставновление вектора вариантов ответов
+	this->answers = answers;
 }
 
 void Question::set_correct_answer_index(int correct_answer_index) {
@@ -25,8 +25,7 @@ int Question::get_difficulty_level() const {
 }
 
 std::vector<std::string> Question::get_answers() const {
-	// TODO: реализовать полноценный возврат вектора вариантов ответов
-	return {"Китай", "Япония", "Англия", "Индия"};
+	return answers;
 }
 
 int Question::get_correct_answer_index() const {
