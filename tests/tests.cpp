@@ -83,5 +83,14 @@ namespace tests
 			question.set_difficulty_level(2);
 			Assert::AreEqual(2, question.get_difficulty_level());
 		}
+
+		// Тестовый метод для проверки задания значения полю answers класса Question
+		TEST_METHOD(TestSetAnswers)
+		{
+			Question question;
+			std::vector<std::string> answers = {"Китай", "Япония", "Англия", "Индия"};
+			question.set_answers(answers);
+			Assert::IsTrue(answers == question.get_answers());
+		}
 	};
 }
